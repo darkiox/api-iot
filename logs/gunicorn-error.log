@@ -1,0 +1,1834 @@
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+/home/darkiox/api-emergentes/gunicorn_start: line 16: exec: gunicorn: not found
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+/home/darkiox/api-emergentes/gunicorn_start: line 16: exec: gunicorn: not found
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+/home/darkiox/api-emergentes/gunicorn_start: line 16: exec: gunicorn: not found
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+/home/darkiox/api-emergentes/gunicorn_start: line 16: exec: gunicorn: not found
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+None
+None
+None
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+None
+None
+None
+None
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+None
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+[2023-06-05 13:24:02 -0400] [3510] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/workers.py", line 66, in init_process
+    super(UvicornWorker, self).init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 383, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/darkiox/api-emergentes/main.py", line 62
+    console.log(api_key)
+    ^
+IndentationError: unexpected indent
+[2023-06-05 13:24:03 -0400] [3511] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/workers.py", line 66, in init_process
+    super(UvicornWorker, self).init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 383, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/darkiox/api-emergentes/main.py", line 62
+    console.log(api_key)
+    ^
+IndentationError: unexpected indent
+[2023-06-05 13:24:03 -0400] [3512] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/workers.py", line 66, in init_process
+    super(UvicornWorker, self).init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 383, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/darkiox/api-emergentes/main.py", line 62
+    console.log(api_key)
+    ^
+IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 202, in run
+    self.manage_workers()
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 545, in manage_workers
+    self.spawn_workers()
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 617, in spawn_workers
+    time.sleep(0.1 * random.random())
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 525, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/bin/gunicorn", line 11, in <module>
+    load_entry_point('gunicorn==20.0.4', 'console_scripts', 'gunicorn')()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 58, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 228, in run
+    super().run()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 229, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 342, in halt
+    self.stop()
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 393, in stop
+    time.sleep(0.1)
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 525, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+[2023-06-05 13:24:04 -0400] [3534] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/workers.py", line 66, in init_process
+    super(UvicornWorker, self).init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 383, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/darkiox/api-emergentes/main.py", line 62
+    console.log(api_key)
+    ^
+IndentationError: unexpected indent
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+[2023-06-05 13:24:06 -0400] [3550] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/workers.py", line 66, in init_process
+    super(UvicornWorker, self).init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 383, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/darkiox/api-emergentes/main.py", line 62
+    console.log(api_key)
+    ^
+IndentationError: unexpected indent
+[2023-06-05 13:24:06 -0400] [3551] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/workers.py", line 66, in init_process
+    super(UvicornWorker, self).init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 383, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/darkiox/api-emergentes/main.py", line 62
+    console.log(api_key)
+    ^
+IndentationError: unexpected indent
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+[2023-06-05 13:24:08 -0400] [3560] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/workers.py", line 66, in init_process
+    super(UvicornWorker, self).init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 383, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/darkiox/api-emergentes/main.py", line 62
+    console.log(api_key)
+    ^
+IndentationError: unexpected indent
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+[2023-06-05 13:24:13 -0400] [3590] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/workers.py", line 66, in init_process
+    super(UvicornWorker, self).init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 383, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/darkiox/api-emergentes/main.py", line 62
+    console.log(api_key)
+    ^
+IndentationError: unexpected indent
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+[2023-06-05 13:24:14 -0400] [3604] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/workers.py", line 66, in init_process
+    super(UvicornWorker, self).init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 383, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/darkiox/api-emergentes/main.py", line 62
+    console.log(api_key)
+    ^
+IndentationError: unexpected indent
+[2023-06-05 13:24:14 -0400] [3605] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/workers.py", line 66, in init_process
+    super(UvicornWorker, self).init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 383, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/darkiox/api-emergentes/main.py", line 62
+    console.log(api_key)
+    ^
+IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 202, in run
+    self.manage_workers()
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 545, in manage_workers
+    self.spawn_workers()
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 617, in spawn_workers
+    time.sleep(0.1 * random.random())
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 525, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/bin/gunicorn", line 11, in <module>
+    load_entry_point('gunicorn==20.0.4', 'console_scripts', 'gunicorn')()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 58, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 228, in run
+    super().run()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 229, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 342, in halt
+    self.stop()
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 393, in stop
+    time.sleep(0.1)
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 525, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+[2023-06-05 13:24:17 -0400] [3628] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/workers.py", line 66, in init_process
+    super(UvicornWorker, self).init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 383, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/darkiox/api-emergentes/main.py", line 62
+    console.log(api_key)
+    ^
+IndentationError: unexpected indent
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+[2023-06-05 13:24:30 -0400] [3669] [ERROR] Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/routing.py", line 163, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/darkiox/api-emergentes/main.py", line 62, in get_locations
+    console.log(api_key)
+NameError: name 'console' is not defined
+[2023-06-05 13:24:30 -0400] [3669] [ERROR] Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/routing.py", line 163, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/darkiox/api-emergentes/main.py", line 62, in get_locations
+    console.log(api_key)
+NameError: name 'console' is not defined
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+[2023-06-05 13:25:15 -0400] [3825] [ERROR] Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/routing.py", line 163, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/darkiox/api-emergentes/main.py", line 62, in get_locations
+    console.log("hola")
+NameError: name 'console' is not defined
+[2023-06-05 13:25:16 -0400] [3825] [ERROR] Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/routing.py", line 163, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/darkiox/api-emergentes/main.py", line 62, in get_locations
+    console.log("hola")
+NameError: name 'console' is not defined
+[2023-06-05 13:25:23 -0400] [3825] [ERROR] Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/routing.py", line 163, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/darkiox/api-emergentes/main.py", line 62, in get_locations
+    console.log("hola")
+NameError: name 'console' is not defined
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+[2023-06-05 13:26:36 -0400] [3876] [DEBUG] Current configuration:
+  config: None
+  bind: ['unix:/home/darkiox/api-emergentes/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/darkiox/api-emergentes
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: fastapi-app
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f5d3a9b55e0>
+  on_reload: <function OnReload.on_reload at 0x7f5d3a9b5700>
+  when_ready: <function WhenReady.when_ready at 0x7f5d3a9b5820>
+  pre_fork: <function Prefork.pre_fork at 0x7f5d3a9b5940>
+  post_fork: <function Postfork.post_fork at 0x7f5d3a9b5a60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f5d3a9b5b80>
+  worker_int: <function WorkerInt.worker_int at 0x7f5d3a9b5ca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f5d3a9b5dc0>
+  pre_exec: <function PreExec.pre_exec at 0x7f5d3a9b5ee0>
+  pre_request: <function PreRequest.pre_request at 0x7f5d3a9c8040>
+  post_request: <function PostRequest.post_request at 0x7f5d3a9c80d0>
+  child_exit: <function ChildExit.child_exit at 0x7f5d3a9c81f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f5d3a9c8310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f5d3a9c8430>
+  on_exit: <function OnExit.on_exit at 0x7f5d3a9c8550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-05 13:26:36 -0400] [3876] [INFO] Starting gunicorn 20.0.4
+[2023-06-05 13:26:36 -0400] [3876] [DEBUG] Arbiter booted
+[2023-06-05 13:26:36 -0400] [3876] [INFO] Listening at: unix:/home/darkiox/api-emergentes/run/gunicorn.sock (3876)
+[2023-06-05 13:26:36 -0400] [3876] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-05 13:26:36 -0400] [3878] [INFO] Booting worker with pid: 3878
+[2023-06-05 13:26:36 -0400] [3879] [INFO] Booting worker with pid: 3879
+[2023-06-05 13:26:36 -0400] [3880] [INFO] Booting worker with pid: 3880
+[2023-06-05 13:26:36 -0400] [3878] [INFO] Started server process [3878]
+[2023-06-05 13:26:36 -0400] [3878] [INFO] Waiting for application startup.
+[2023-06-05 13:26:36 -0400] [3878] [INFO] Application startup complete.
+[2023-06-05 13:26:36 -0400] [3876] [DEBUG] 3 workers
+[2023-06-05 13:26:37 -0400] [3879] [INFO] Started server process [3879]
+[2023-06-05 13:26:37 -0400] [3879] [INFO] Waiting for application startup.
+[2023-06-05 13:26:37 -0400] [3879] [INFO] Application startup complete.
+[2023-06-05 13:26:37 -0400] [3880] [INFO] Started server process [3880]
+[2023-06-05 13:26:37 -0400] [3880] [INFO] Waiting for application startup.
+[2023-06-05 13:26:37 -0400] [3880] [INFO] Application startup complete.
+[2023-06-05 13:26:39 -0400] [3880] [ERROR] Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/routing.py", line 163, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/darkiox/api-emergentes/main.py", line 62, in get_locations
+    console.log("hola")
+NameError: name 'console' is not defined
+[2023-06-05 13:26:53 -0400] [3880] [ERROR] Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/routing.py", line 163, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/darkiox/api-emergentes/main.py", line 62, in get_locations
+    return(api_key)
+NameError: name 'console' is not defined
+[2023-06-05 13:26:54 -0400] [3880] [ERROR] Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 428, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/darkiox/.local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+  File "/home/darkiox/.local/lib/python3.8/site-packages/fastapi/routing.py", line 163, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/darkiox/api-emergentes/main.py", line 62, in get_locations
+    return(api_key)
+NameError: name 'console' is not defined
+[2023-06-05 13:27:12 -0400] [3876] [INFO] Handling signal: term
+[2023-06-05 13:27:12 -0400] [3880] [INFO] Shutting down
+[2023-06-05 13:27:12 -0400] [3879] [INFO] Shutting down
+[2023-06-05 13:27:12 -0400] [3878] [INFO] Shutting down
+[2023-06-05 13:27:12 -0400] [3880] [INFO] Waiting for application shutdown.
+[2023-06-05 13:27:12 -0400] [3880] [INFO] Application shutdown complete.
+[2023-06-05 13:27:12 -0400] [3880] [INFO] Finished server process [3880]
+[2023-06-05 13:27:12 -0400] [3880] [INFO] Worker exiting (pid: 3880)
+[2023-06-05 13:27:12 -0400] [3879] [INFO] Waiting for application shutdown.
+[2023-06-05 13:27:12 -0400] [3879] [INFO] Application shutdown complete.
+[2023-06-05 13:27:12 -0400] [3879] [INFO] Finished server process [3879]
+[2023-06-05 13:27:12 -0400] [3879] [INFO] Worker exiting (pid: 3879)
+[2023-06-05 13:27:12 -0400] [3878] [INFO] Waiting for application shutdown.
+[2023-06-05 13:27:12 -0400] [3878] [INFO] Application shutdown complete.
+[2023-06-05 13:27:12 -0400] [3878] [INFO] Finished server process [3878]
+[2023-06-05 13:27:12 -0400] [3878] [INFO] Worker exiting (pid: 3878)
+[2023-06-05 13:27:12 -0400] [3876] [INFO] Shutting down: Master
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+[2023-06-05 13:27:12 -0400] [3929] [DEBUG] Current configuration:
+  config: None
+  bind: ['unix:/home/darkiox/api-emergentes/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/darkiox/api-emergentes
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: fastapi-app
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f1b2cbec5e0>
+  on_reload: <function OnReload.on_reload at 0x7f1b2cbec700>
+  when_ready: <function WhenReady.when_ready at 0x7f1b2cbec820>
+  pre_fork: <function Prefork.pre_fork at 0x7f1b2cbec940>
+  post_fork: <function Postfork.post_fork at 0x7f1b2cbeca60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f1b2cbecb80>
+  worker_int: <function WorkerInt.worker_int at 0x7f1b2cbecca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f1b2cbecdc0>
+  pre_exec: <function PreExec.pre_exec at 0x7f1b2cbecee0>
+  pre_request: <function PreRequest.pre_request at 0x7f1b2cbfe040>
+  post_request: <function PostRequest.post_request at 0x7f1b2cbfe0d0>
+  child_exit: <function ChildExit.child_exit at 0x7f1b2cbfe1f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f1b2cbfe310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f1b2cbfe430>
+  on_exit: <function OnExit.on_exit at 0x7f1b2cbfe550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-05 13:27:12 -0400] [3929] [INFO] Starting gunicorn 20.0.4
+[2023-06-05 13:27:12 -0400] [3929] [DEBUG] Arbiter booted
+[2023-06-05 13:27:12 -0400] [3929] [INFO] Listening at: unix:/home/darkiox/api-emergentes/run/gunicorn.sock (3929)
+[2023-06-05 13:27:12 -0400] [3929] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-05 13:27:12 -0400] [3931] [INFO] Booting worker with pid: 3931
+[2023-06-05 13:27:12 -0400] [3932] [INFO] Booting worker with pid: 3932
+[2023-06-05 13:27:12 -0400] [3931] [INFO] Started server process [3931]
+[2023-06-05 13:27:12 -0400] [3931] [INFO] Waiting for application startup.
+[2023-06-05 13:27:12 -0400] [3931] [INFO] Application startup complete.
+[2023-06-05 13:27:12 -0400] [3933] [INFO] Booting worker with pid: 3933
+[2023-06-05 13:27:12 -0400] [3929] [DEBUG] 3 workers
+[2023-06-05 13:27:12 -0400] [3932] [INFO] Started server process [3932]
+[2023-06-05 13:27:12 -0400] [3932] [INFO] Waiting for application startup.
+[2023-06-05 13:27:12 -0400] [3932] [INFO] Application startup complete.
+[2023-06-05 13:27:13 -0400] [3933] [INFO] Started server process [3933]
+[2023-06-05 13:27:13 -0400] [3933] [INFO] Waiting for application startup.
+[2023-06-05 13:27:13 -0400] [3933] [INFO] Application startup complete.
+[2023-06-05 13:28:02 -0400] [3929] [INFO] Handling signal: term
+[2023-06-05 13:28:02 -0400] [3933] [INFO] Shutting down
+[2023-06-05 13:28:02 -0400] [3932] [INFO] Shutting down
+[2023-06-05 13:28:02 -0400] [3931] [INFO] Shutting down
+[2023-06-05 13:28:02 -0400] [3933] [INFO] Waiting for application shutdown.
+[2023-06-05 13:28:02 -0400] [3933] [INFO] Application shutdown complete.
+[2023-06-05 13:28:02 -0400] [3933] [INFO] Finished server process [3933]
+[2023-06-05 13:28:02 -0400] [3933] [INFO] Worker exiting (pid: 3933)
+[2023-06-05 13:28:02 -0400] [3932] [INFO] Waiting for application shutdown.
+[2023-06-05 13:28:02 -0400] [3932] [INFO] Application shutdown complete.
+[2023-06-05 13:28:02 -0400] [3932] [INFO] Finished server process [3932]
+[2023-06-05 13:28:02 -0400] [3932] [INFO] Worker exiting (pid: 3932)
+[2023-06-05 13:28:02 -0400] [3931] [INFO] Waiting for application shutdown.
+[2023-06-05 13:28:02 -0400] [3931] [INFO] Application shutdown complete.
+[2023-06-05 13:28:02 -0400] [3931] [INFO] Finished server process [3931]
+[2023-06-05 13:28:02 -0400] [3931] [INFO] Worker exiting (pid: 3931)
+[2023-06-05 13:28:02 -0400] [3929] [INFO] Shutting down: Master
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+[2023-06-05 13:28:02 -0400] [4016] [DEBUG] Current configuration:
+  config: None
+  bind: ['unix:/home/darkiox/api-emergentes/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/darkiox/api-emergentes
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: fastapi-app
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7eff65b3f5e0>
+  on_reload: <function OnReload.on_reload at 0x7eff65b3f700>
+  when_ready: <function WhenReady.when_ready at 0x7eff65b3f820>
+  pre_fork: <function Prefork.pre_fork at 0x7eff65b3f940>
+  post_fork: <function Postfork.post_fork at 0x7eff65b3fa60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7eff65b3fb80>
+  worker_int: <function WorkerInt.worker_int at 0x7eff65b3fca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7eff65b3fdc0>
+  pre_exec: <function PreExec.pre_exec at 0x7eff65b3fee0>
+  pre_request: <function PreRequest.pre_request at 0x7eff65b51040>
+  post_request: <function PostRequest.post_request at 0x7eff65b510d0>
+  child_exit: <function ChildExit.child_exit at 0x7eff65b511f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7eff65b51310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7eff65b51430>
+  on_exit: <function OnExit.on_exit at 0x7eff65b51550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-05 13:28:02 -0400] [4016] [INFO] Starting gunicorn 20.0.4
+[2023-06-05 13:28:02 -0400] [4016] [DEBUG] Arbiter booted
+[2023-06-05 13:28:02 -0400] [4016] [INFO] Listening at: unix:/home/darkiox/api-emergentes/run/gunicorn.sock (4016)
+[2023-06-05 13:28:02 -0400] [4016] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-05 13:28:02 -0400] [4018] [INFO] Booting worker with pid: 4018
+[2023-06-05 13:28:02 -0400] [4019] [INFO] Booting worker with pid: 4019
+[2023-06-05 13:28:02 -0400] [4018] [INFO] Started server process [4018]
+[2023-06-05 13:28:02 -0400] [4018] [INFO] Waiting for application startup.
+[2023-06-05 13:28:02 -0400] [4018] [INFO] Application startup complete.
+[2023-06-05 13:28:02 -0400] [4020] [INFO] Booting worker with pid: 4020
+[2023-06-05 13:28:02 -0400] [4016] [DEBUG] 3 workers
+[2023-06-05 13:28:02 -0400] [4019] [INFO] Started server process [4019]
+[2023-06-05 13:28:02 -0400] [4019] [INFO] Waiting for application startup.
+[2023-06-05 13:28:02 -0400] [4019] [INFO] Application startup complete.
+[2023-06-05 13:28:02 -0400] [4020] [INFO] Started server process [4020]
+[2023-06-05 13:28:02 -0400] [4020] [INFO] Waiting for application startup.
+[2023-06-05 13:28:02 -0400] [4020] [INFO] Application startup complete.
+[2023-06-05 13:30:20 -0400] [4016] [INFO] Handling signal: term
+[2023-06-05 13:30:20 -0400] [4018] [INFO] Shutting down
+[2023-06-05 13:30:20 -0400] [4020] [INFO] Shutting down
+[2023-06-05 13:30:20 -0400] [4019] [INFO] Shutting down
+[2023-06-05 13:30:20 -0400] [4018] [INFO] Waiting for application shutdown.
+[2023-06-05 13:30:20 -0400] [4018] [INFO] Application shutdown complete.
+[2023-06-05 13:30:20 -0400] [4018] [INFO] Finished server process [4018]
+[2023-06-05 13:30:20 -0400] [4018] [INFO] Worker exiting (pid: 4018)
+[2023-06-05 13:30:20 -0400] [4020] [INFO] Waiting for application shutdown.
+[2023-06-05 13:30:20 -0400] [4020] [INFO] Application shutdown complete.
+[2023-06-05 13:30:20 -0400] [4020] [INFO] Finished server process [4020]
+[2023-06-05 13:30:20 -0400] [4020] [INFO] Worker exiting (pid: 4020)
+[2023-06-05 13:30:20 -0400] [4019] [INFO] Waiting for application shutdown.
+[2023-06-05 13:30:20 -0400] [4019] [INFO] Application shutdown complete.
+[2023-06-05 13:30:20 -0400] [4019] [INFO] Finished server process [4019]
+[2023-06-05 13:30:20 -0400] [4019] [INFO] Worker exiting (pid: 4019)
+[2023-06-05 13:30:20 -0400] [4016] [INFO] Shutting down: Master
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+[2023-06-05 13:30:21 -0400] [4074] [DEBUG] Current configuration:
+  config: None
+  bind: ['unix:/home/darkiox/api-emergentes/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/darkiox/api-emergentes
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: fastapi-app
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f7fb07355e0>
+  on_reload: <function OnReload.on_reload at 0x7f7fb0735700>
+  when_ready: <function WhenReady.when_ready at 0x7f7fb0735820>
+  pre_fork: <function Prefork.pre_fork at 0x7f7fb0735940>
+  post_fork: <function Postfork.post_fork at 0x7f7fb0735a60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f7fb0735b80>
+  worker_int: <function WorkerInt.worker_int at 0x7f7fb0735ca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f7fb0735dc0>
+  pre_exec: <function PreExec.pre_exec at 0x7f7fb0735ee0>
+  pre_request: <function PreRequest.pre_request at 0x7f7fb0747040>
+  post_request: <function PostRequest.post_request at 0x7f7fb07470d0>
+  child_exit: <function ChildExit.child_exit at 0x7f7fb07471f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f7fb0747310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f7fb0747430>
+  on_exit: <function OnExit.on_exit at 0x7f7fb0747550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-05 13:30:21 -0400] [4074] [INFO] Starting gunicorn 20.0.4
+[2023-06-05 13:30:21 -0400] [4074] [DEBUG] Arbiter booted
+[2023-06-05 13:30:21 -0400] [4074] [INFO] Listening at: unix:/home/darkiox/api-emergentes/run/gunicorn.sock (4074)
+[2023-06-05 13:30:21 -0400] [4074] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-05 13:30:21 -0400] [4076] [INFO] Booting worker with pid: 4076
+[2023-06-05 13:30:21 -0400] [4077] [INFO] Booting worker with pid: 4077
+[2023-06-05 13:30:21 -0400] [4078] [INFO] Booting worker with pid: 4078
+[2023-06-05 13:30:21 -0400] [4076] [INFO] Started server process [4076]
+[2023-06-05 13:30:21 -0400] [4076] [INFO] Waiting for application startup.
+[2023-06-05 13:30:21 -0400] [4076] [INFO] Application startup complete.
+[2023-06-05 13:30:21 -0400] [4074] [DEBUG] 3 workers
+[2023-06-05 13:30:21 -0400] [4077] [INFO] Started server process [4077]
+[2023-06-05 13:30:21 -0400] [4077] [INFO] Waiting for application startup.
+[2023-06-05 13:30:21 -0400] [4077] [INFO] Application startup complete.
+[2023-06-05 13:30:21 -0400] [4078] [INFO] Started server process [4078]
+[2023-06-05 13:30:21 -0400] [4078] [INFO] Waiting for application startup.
+[2023-06-05 13:30:21 -0400] [4078] [INFO] Application startup complete.
+[2023-06-05 13:32:34 -0400] [4074] [INFO] Handling signal: term
+[2023-06-05 13:32:34 -0400] [4076] [INFO] Shutting down
+[2023-06-05 13:32:34 -0400] [4078] [INFO] Shutting down
+[2023-06-05 13:32:34 -0400] [4077] [INFO] Shutting down
+[2023-06-05 13:32:35 -0400] [4076] [INFO] Waiting for application shutdown.
+[2023-06-05 13:32:35 -0400] [4076] [INFO] Application shutdown complete.
+[2023-06-05 13:32:35 -0400] [4076] [INFO] Finished server process [4076]
+[2023-06-05 13:32:35 -0400] [4076] [INFO] Worker exiting (pid: 4076)
+[2023-06-05 13:32:35 -0400] [4078] [INFO] Waiting for application shutdown.
+[2023-06-05 13:32:35 -0400] [4078] [INFO] Application shutdown complete.
+[2023-06-05 13:32:35 -0400] [4078] [INFO] Finished server process [4078]
+[2023-06-05 13:32:35 -0400] [4078] [INFO] Worker exiting (pid: 4078)
+[2023-06-05 13:32:35 -0400] [4077] [INFO] Waiting for application shutdown.
+[2023-06-05 13:32:35 -0400] [4077] [INFO] Application shutdown complete.
+[2023-06-05 13:32:35 -0400] [4077] [INFO] Finished server process [4077]
+[2023-06-05 13:32:35 -0400] [4077] [INFO] Worker exiting (pid: 4077)
+[2023-06-05 13:32:35 -0400] [4074] [INFO] Shutting down: Master
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+usage: gunicorn [OPTIONS] [APP_MODULE]
+gunicorn: error: unrecognized arguments: --port 7777 --host 192.168.1.4
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+usage: gunicorn [OPTIONS] [APP_MODULE]
+gunicorn: error: unrecognized arguments: --port 7777 --host 192.168.1.4
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+usage: gunicorn [OPTIONS] [APP_MODULE]
+gunicorn: error: unrecognized arguments: --port 7777 --host 192.168.1.4
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+usage: gunicorn [OPTIONS] [APP_MODULE]
+gunicorn: error: unrecognized arguments: --port 7777 --host 192.168.1.4
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+usage: gunicorn [OPTIONS] [APP_MODULE]
+gunicorn: error: unrecognized arguments: --port 7777 --host 192.168.1.4
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+usage: gunicorn [OPTIONS] [APP_MODULE]
+gunicorn: error: unrecognized arguments: --port 7777 --host 192.168.1.4
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+usage: gunicorn [OPTIONS] [APP_MODULE]
+gunicorn: error: unrecognized arguments: --port 7777 --host 192.168.1.4
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+usage: gunicorn [OPTIONS] [APP_MODULE]
+gunicorn: error: unrecognized arguments: --port 7777 --host 192.168.1.4
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+[2023-06-05 13:33:21 -0400] [4450] [DEBUG] Current configuration:
+  config: None
+  bind: ['unix:/home/darkiox/api-emergentes/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/darkiox/api-emergentes
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: fastapi-app
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f37671e95e0>
+  on_reload: <function OnReload.on_reload at 0x7f37671e9700>
+  when_ready: <function WhenReady.when_ready at 0x7f37671e9820>
+  pre_fork: <function Prefork.pre_fork at 0x7f37671e9940>
+  post_fork: <function Postfork.post_fork at 0x7f37671e9a60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f37671e9b80>
+  worker_int: <function WorkerInt.worker_int at 0x7f37671e9ca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f37671e9dc0>
+  pre_exec: <function PreExec.pre_exec at 0x7f37671e9ee0>
+  pre_request: <function PreRequest.pre_request at 0x7f37671fb040>
+  post_request: <function PostRequest.post_request at 0x7f37671fb0d0>
+  child_exit: <function ChildExit.child_exit at 0x7f37671fb1f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f37671fb310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f37671fb430>
+  on_exit: <function OnExit.on_exit at 0x7f37671fb550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-05 13:33:21 -0400] [4450] [INFO] Starting gunicorn 20.0.4
+[2023-06-05 13:33:21 -0400] [4450] [DEBUG] Arbiter booted
+[2023-06-05 13:33:21 -0400] [4450] [INFO] Listening at: unix:/home/darkiox/api-emergentes/run/gunicorn.sock (4450)
+[2023-06-05 13:33:21 -0400] [4450] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-05 13:33:21 -0400] [4452] [INFO] Booting worker with pid: 4452
+[2023-06-05 13:33:21 -0400] [4453] [INFO] Booting worker with pid: 4453
+[2023-06-05 13:33:21 -0400] [4454] [INFO] Booting worker with pid: 4454
+[2023-06-05 13:33:21 -0400] [4452] [INFO] Started server process [4452]
+[2023-06-05 13:33:21 -0400] [4452] [INFO] Waiting for application startup.
+[2023-06-05 13:33:21 -0400] [4452] [INFO] Application startup complete.
+[2023-06-05 13:33:21 -0400] [4450] [DEBUG] 3 workers
+[2023-06-05 13:33:21 -0400] [4453] [INFO] Started server process [4453]
+[2023-06-05 13:33:21 -0400] [4453] [INFO] Waiting for application startup.
+[2023-06-05 13:33:21 -0400] [4453] [INFO] Application startup complete.
+[2023-06-05 13:33:21 -0400] [4454] [INFO] Started server process [4454]
+[2023-06-05 13:33:21 -0400] [4454] [INFO] Waiting for application startup.
+[2023-06-05 13:33:21 -0400] [4454] [INFO] Application startup complete.
+[2023-06-05 13:35:19 -0400] [4452] [INFO] Worker reloading: /home/darkiox/api-emergentes/main.py modified
+[2023-06-05 13:35:19 -0400] [4454] [INFO] Worker reloading: /home/darkiox/api-emergentes/main.py modified
+[2023-06-05 13:35:19 -0400] [4453] [INFO] Worker reloading: /home/darkiox/api-emergentes/main.py modified
+[2023-06-05 13:35:21 -0400] [4450] [INFO] Handling signal: term
+[2023-06-05 13:35:21 -0400] [4453] [INFO] Shutting down
+[2023-06-05 13:35:21 -0400] [4454] [INFO] Shutting down
+[2023-06-05 13:35:21 -0400] [4452] [INFO] Shutting down
+[2023-06-05 13:35:22 -0400] [4453] [INFO] Waiting for application shutdown.
+[2023-06-05 13:35:22 -0400] [4453] [INFO] Application shutdown complete.
+[2023-06-05 13:35:22 -0400] [4453] [INFO] Finished server process [4453]
+[2023-06-05 13:35:22 -0400] [4453] [INFO] Worker exiting (pid: 4453)
+[2023-06-05 13:35:22 -0400] [4454] [INFO] Waiting for application shutdown.
+[2023-06-05 13:35:22 -0400] [4454] [INFO] Application shutdown complete.
+[2023-06-05 13:35:22 -0400] [4454] [INFO] Finished server process [4454]
+[2023-06-05 13:35:22 -0400] [4454] [INFO] Worker exiting (pid: 4454)
+[2023-06-05 13:35:22 -0400] [4452] [INFO] Waiting for application shutdown.
+[2023-06-05 13:35:22 -0400] [4452] [INFO] Application shutdown complete.
+[2023-06-05 13:35:22 -0400] [4452] [INFO] Finished server process [4452]
+[2023-06-05 13:35:22 -0400] [4452] [INFO] Worker exiting (pid: 4452)
+[2023-06-05 13:35:22 -0400] [4450] [INFO] Shutting down: Master
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+[2023-06-05 13:35:23 -0400] [4543] [DEBUG] Current configuration:
+  config: None
+  bind: ['unix:/home/darkiox/api-emergentes/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/darkiox/api-emergentes
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: fastapi-app
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f6bdf1045e0>
+  on_reload: <function OnReload.on_reload at 0x7f6bdf104700>
+  when_ready: <function WhenReady.when_ready at 0x7f6bdf104820>
+  pre_fork: <function Prefork.pre_fork at 0x7f6bdf104940>
+  post_fork: <function Postfork.post_fork at 0x7f6bdf104a60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f6bdf104b80>
+  worker_int: <function WorkerInt.worker_int at 0x7f6bdf104ca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f6bdf104dc0>
+  pre_exec: <function PreExec.pre_exec at 0x7f6bdf104ee0>
+  pre_request: <function PreRequest.pre_request at 0x7f6bdf116040>
+  post_request: <function PostRequest.post_request at 0x7f6bdf1160d0>
+  child_exit: <function ChildExit.child_exit at 0x7f6bdf1161f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f6bdf116310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f6bdf116430>
+  on_exit: <function OnExit.on_exit at 0x7f6bdf116550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-05 13:35:23 -0400] [4543] [INFO] Starting gunicorn 20.0.4
+[2023-06-05 13:35:23 -0400] [4543] [DEBUG] Arbiter booted
+[2023-06-05 13:35:23 -0400] [4543] [INFO] Listening at: unix:/home/darkiox/api-emergentes/run/gunicorn.sock (4543)
+[2023-06-05 13:35:23 -0400] [4543] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-05 13:35:23 -0400] [4545] [INFO] Booting worker with pid: 4545
+[2023-06-05 13:35:23 -0400] [4546] [INFO] Booting worker with pid: 4546
+[2023-06-05 13:35:23 -0400] [4547] [INFO] Booting worker with pid: 4547
+[2023-06-05 13:35:23 -0400] [4543] [DEBUG] 3 workers
+[2023-06-05 13:35:23 -0400] [4545] [INFO] Started server process [4545]
+[2023-06-05 13:35:23 -0400] [4545] [INFO] Waiting for application startup.
+[2023-06-05 13:35:23 -0400] [4545] [INFO] Application startup complete.
+[2023-06-05 13:35:23 -0400] [4546] [INFO] Started server process [4546]
+[2023-06-05 13:35:23 -0400] [4546] [INFO] Waiting for application startup.
+[2023-06-05 13:35:23 -0400] [4546] [INFO] Application startup complete.
+[2023-06-05 13:35:23 -0400] [4547] [INFO] Started server process [4547]
+[2023-06-05 13:35:23 -0400] [4547] [INFO] Waiting for application startup.
+[2023-06-05 13:35:23 -0400] [4547] [INFO] Application startup complete.
+[2023-06-05 13:37:14 -0400] [4543] [INFO] Handling signal: term
+[2023-06-05 13:37:14 -0400] [4545] [INFO] Shutting down
+[2023-06-05 13:37:14 -0400] [4546] [INFO] Shutting down
+[2023-06-05 13:37:14 -0400] [4547] [INFO] Shutting down
+[2023-06-05 13:37:14 -0400] [4545] [INFO] Waiting for application shutdown.
+[2023-06-05 13:37:14 -0400] [4545] [INFO] Application shutdown complete.
+[2023-06-05 13:37:14 -0400] [4545] [INFO] Finished server process [4545]
+[2023-06-05 13:37:14 -0400] [4545] [INFO] Worker exiting (pid: 4545)
+[2023-06-05 13:37:14 -0400] [4546] [INFO] Waiting for application shutdown.
+[2023-06-05 13:37:14 -0400] [4546] [INFO] Application shutdown complete.
+[2023-06-05 13:37:14 -0400] [4546] [INFO] Finished server process [4546]
+[2023-06-05 13:37:14 -0400] [4546] [INFO] Worker exiting (pid: 4546)
+[2023-06-05 13:37:14 -0400] [4547] [INFO] Waiting for application shutdown.
+[2023-06-05 13:37:14 -0400] [4547] [INFO] Application shutdown complete.
+[2023-06-05 13:37:14 -0400] [4547] [INFO] Finished server process [4547]
+[2023-06-05 13:37:14 -0400] [4547] [INFO] Worker exiting (pid: 4547)
+[2023-06-05 13:37:14 -0400] [4543] [INFO] Shutting down: Master
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+[2023-06-05 13:37:19 -0400] [4911] [DEBUG] Current configuration:
+  config: None
+  bind: ['unix:/home/darkiox/api-emergentes/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/darkiox/api-emergentes
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: fastapi-app
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f232f4605e0>
+  on_reload: <function OnReload.on_reload at 0x7f232f460700>
+  when_ready: <function WhenReady.when_ready at 0x7f232f460820>
+  pre_fork: <function Prefork.pre_fork at 0x7f232f460940>
+  post_fork: <function Postfork.post_fork at 0x7f232f460a60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f232f460b80>
+  worker_int: <function WorkerInt.worker_int at 0x7f232f460ca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f232f460dc0>
+  pre_exec: <function PreExec.pre_exec at 0x7f232f460ee0>
+  pre_request: <function PreRequest.pre_request at 0x7f232f473040>
+  post_request: <function PostRequest.post_request at 0x7f232f4730d0>
+  child_exit: <function ChildExit.child_exit at 0x7f232f4731f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f232f473310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f232f473430>
+  on_exit: <function OnExit.on_exit at 0x7f232f473550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-05 13:37:19 -0400] [4911] [INFO] Starting gunicorn 20.0.4
+[2023-06-05 13:37:19 -0400] [4911] [DEBUG] Arbiter booted
+[2023-06-05 13:37:19 -0400] [4911] [INFO] Listening at: unix:/home/darkiox/api-emergentes/run/gunicorn.sock (4911)
+[2023-06-05 13:37:19 -0400] [4911] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-05 13:37:19 -0400] [4913] [INFO] Booting worker with pid: 4913
+[2023-06-05 13:37:20 -0400] [4914] [INFO] Booting worker with pid: 4914
+[2023-06-05 13:37:20 -0400] [4915] [INFO] Booting worker with pid: 4915
+[2023-06-05 13:37:20 -0400] [4913] [INFO] Started server process [4913]
+[2023-06-05 13:37:20 -0400] [4913] [INFO] Waiting for application startup.
+[2023-06-05 13:37:20 -0400] [4913] [INFO] Application startup complete.
+[2023-06-05 13:37:20 -0400] [4911] [DEBUG] 3 workers
+[2023-06-05 13:37:20 -0400] [4914] [INFO] Started server process [4914]
+[2023-06-05 13:37:20 -0400] [4914] [INFO] Waiting for application startup.
+[2023-06-05 13:37:20 -0400] [4914] [INFO] Application startup complete.
+[2023-06-05 13:37:20 -0400] [4915] [INFO] Started server process [4915]
+[2023-06-05 13:37:20 -0400] [4915] [INFO] Waiting for application startup.
+[2023-06-05 13:37:20 -0400] [4915] [INFO] Application startup complete.
+[2023-06-05 13:40:59 -0400] [4915] [INFO] Worker reloading: /home/darkiox/api-emergentes/main.py modified
+[2023-06-05 13:40:59 -0400] [4914] [INFO] Worker reloading: /home/darkiox/api-emergentes/main.py modified
+[2023-06-05 13:40:59 -0400] [4913] [INFO] Worker reloading: /home/darkiox/api-emergentes/main.py modified
+[2023-06-05 13:41:07 -0400] [4911] [INFO] Handling signal: term
+[2023-06-05 13:41:07 -0400] [4913] [INFO] Shutting down
+[2023-06-05 13:41:07 -0400] [4914] [INFO] Shutting down
+[2023-06-05 13:41:07 -0400] [4915] [INFO] Shutting down
+[2023-06-05 13:41:07 -0400] [4913] [INFO] Waiting for application shutdown.
+[2023-06-05 13:41:07 -0400] [4913] [INFO] Application shutdown complete.
+[2023-06-05 13:41:07 -0400] [4913] [INFO] Finished server process [4913]
+[2023-06-05 13:41:07 -0400] [4913] [INFO] Worker exiting (pid: 4913)
+[2023-06-05 13:41:07 -0400] [4914] [INFO] Waiting for application shutdown.
+[2023-06-05 13:41:07 -0400] [4914] [INFO] Application shutdown complete.
+[2023-06-05 13:41:07 -0400] [4914] [INFO] Finished server process [4914]
+[2023-06-05 13:41:07 -0400] [4914] [INFO] Worker exiting (pid: 4914)
+None
+[2023-06-05 13:41:07 -0400] [4915] [INFO] Waiting for application shutdown.
+[2023-06-05 13:41:07 -0400] [4915] [INFO] Application shutdown complete.
+[2023-06-05 13:41:07 -0400] [4915] [INFO] Finished server process [4915]
+[2023-06-05 13:41:07 -0400] [4915] [INFO] Worker exiting (pid: 4915)
+None
+None
+None
+None
+None
+None
+[2023-06-05 13:41:07 -0400] [4911] [INFO] Shutting down: Master
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+[2023-06-05 13:41:09 -0400] [5150] [DEBUG] Current configuration:
+  config: None
+  bind: ['unix:/home/darkiox/api-emergentes/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/darkiox/api-emergentes
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: fastapi-app
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f4baf49e5e0>
+  on_reload: <function OnReload.on_reload at 0x7f4baf49e700>
+  when_ready: <function WhenReady.when_ready at 0x7f4baf49e820>
+  pre_fork: <function Prefork.pre_fork at 0x7f4baf49e940>
+  post_fork: <function Postfork.post_fork at 0x7f4baf49ea60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f4baf49eb80>
+  worker_int: <function WorkerInt.worker_int at 0x7f4baf49eca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f4baf49edc0>
+  pre_exec: <function PreExec.pre_exec at 0x7f4baf49eee0>
+  pre_request: <function PreRequest.pre_request at 0x7f4baf4b0040>
+  post_request: <function PostRequest.post_request at 0x7f4baf4b00d0>
+  child_exit: <function ChildExit.child_exit at 0x7f4baf4b01f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f4baf4b0310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f4baf4b0430>
+  on_exit: <function OnExit.on_exit at 0x7f4baf4b0550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-05 13:41:09 -0400] [5150] [INFO] Starting gunicorn 20.0.4
+[2023-06-05 13:41:09 -0400] [5150] [DEBUG] Arbiter booted
+[2023-06-05 13:41:09 -0400] [5150] [INFO] Listening at: unix:/home/darkiox/api-emergentes/run/gunicorn.sock (5150)
+[2023-06-05 13:41:09 -0400] [5150] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-05 13:41:09 -0400] [5152] [INFO] Booting worker with pid: 5152
+[2023-06-05 13:41:10 -0400] [5153] [INFO] Booting worker with pid: 5153
+[2023-06-05 13:41:10 -0400] [5152] [INFO] Started server process [5152]
+[2023-06-05 13:41:10 -0400] [5152] [INFO] Waiting for application startup.
+[2023-06-05 13:41:10 -0400] [5152] [INFO] Application startup complete.
+[2023-06-05 13:41:10 -0400] [5155] [INFO] Booting worker with pid: 5155
+[2023-06-05 13:41:10 -0400] [5150] [DEBUG] 3 workers
+[2023-06-05 13:41:10 -0400] [5153] [INFO] Started server process [5153]
+[2023-06-05 13:41:10 -0400] [5153] [INFO] Waiting for application startup.
+[2023-06-05 13:41:10 -0400] [5153] [INFO] Application startup complete.
+[2023-06-05 13:41:10 -0400] [5155] [INFO] Started server process [5155]
+[2023-06-05 13:41:10 -0400] [5155] [INFO] Waiting for application startup.
+[2023-06-05 13:41:10 -0400] [5155] [INFO] Application startup complete.
+[2023-06-05 13:41:47 -0400] [5152] [INFO] Worker reloading: /home/darkiox/api-emergentes/main.py modified
+[2023-06-05 13:41:47 -0400] [5153] [INFO] Worker reloading: /home/darkiox/api-emergentes/main.py modified
+[2023-06-05 13:41:47 -0400] [5155] [INFO] Worker reloading: /home/darkiox/api-emergentes/main.py modified
+[2023-06-05 13:42:07 -0400] [5150] [INFO] Handling signal: term
+[2023-06-05 13:42:07 -0400] [5153] [INFO] Shutting down
+[2023-06-05 13:42:07 -0400] [5152] [INFO] Shutting down
+[2023-06-05 13:42:07 -0400] [5155] [INFO] Shutting down
+[2023-06-05 13:42:07 -0400] [5153] [INFO] Waiting for application shutdown.
+[2023-06-05 13:42:07 -0400] [5153] [INFO] Application shutdown complete.
+[2023-06-05 13:42:07 -0400] [5153] [INFO] Finished server process [5153]
+[2023-06-05 13:42:07 -0400] [5153] [INFO] Worker exiting (pid: 5153)
+Testing
+[2023-06-05 13:42:07 -0400] [5152] [INFO] Waiting for application shutdown.
+[2023-06-05 13:42:07 -0400] [5152] [INFO] Application shutdown complete.
+[2023-06-05 13:42:07 -0400] [5152] [INFO] Finished server process [5152]
+[2023-06-05 13:42:07 -0400] [5152] [INFO] Worker exiting (pid: 5152)
+[2023-06-05 13:42:07 -0400] [5155] [INFO] Waiting for application shutdown.
+[2023-06-05 13:42:07 -0400] [5155] [INFO] Application shutdown complete.
+[2023-06-05 13:42:07 -0400] [5155] [INFO] Finished server process [5155]
+[2023-06-05 13:42:07 -0400] [5155] [INFO] Worker exiting (pid: 5155)
+[2023-06-05 13:42:07 -0400] [5150] [INFO] Shutting down: Master
+/home/darkiox/api-emergentes/gunicorn_start: line 14: /home/darkiox/api-emergentes/.venv/bin/activate: No such file or directory
+[2023-06-05 13:42:08 -0400] [5211] [DEBUG] Current configuration:
+  config: None
+  bind: ['unix:/home/darkiox/api-emergentes/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/darkiox/api-emergentes
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: fastapi-app
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f8c17dd45e0>
+  on_reload: <function OnReload.on_reload at 0x7f8c17dd4700>
+  when_ready: <function WhenReady.when_ready at 0x7f8c17dd4820>
+  pre_fork: <function Prefork.pre_fork at 0x7f8c17dd4940>
+  post_fork: <function Postfork.post_fork at 0x7f8c17dd4a60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f8c17dd4b80>
+  worker_int: <function WorkerInt.worker_int at 0x7f8c17dd4ca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f8c17dd4dc0>
+  pre_exec: <function PreExec.pre_exec at 0x7f8c17dd4ee0>
+  pre_request: <function PreRequest.pre_request at 0x7f8c17de6040>
+  post_request: <function PostRequest.post_request at 0x7f8c17de60d0>
+  child_exit: <function ChildExit.child_exit at 0x7f8c17de61f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f8c17de6310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f8c17de6430>
+  on_exit: <function OnExit.on_exit at 0x7f8c17de6550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-06-05 13:42:08 -0400] [5211] [INFO] Starting gunicorn 20.0.4
+[2023-06-05 13:42:08 -0400] [5211] [DEBUG] Arbiter booted
+[2023-06-05 13:42:08 -0400] [5211] [INFO] Listening at: unix:/home/darkiox/api-emergentes/run/gunicorn.sock (5211)
+[2023-06-05 13:42:08 -0400] [5211] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-06-05 13:42:08 -0400] [5213] [INFO] Booting worker with pid: 5213
+[2023-06-05 13:42:08 -0400] [5214] [INFO] Booting worker with pid: 5214
+[2023-06-05 13:42:08 -0400] [5213] [INFO] Started server process [5213]
+[2023-06-05 13:42:08 -0400] [5213] [INFO] Waiting for application startup.
+[2023-06-05 13:42:08 -0400] [5213] [INFO] Application startup complete.
+[2023-06-05 13:42:08 -0400] [5216] [INFO] Booting worker with pid: 5216
+[2023-06-05 13:42:08 -0400] [5211] [DEBUG] 3 workers
+[2023-06-05 13:42:08 -0400] [5214] [INFO] Started server process [5214]
+[2023-06-05 13:42:08 -0400] [5214] [INFO] Waiting for application startup.
+[2023-06-05 13:42:08 -0400] [5214] [INFO] Application startup complete.
+[2023-06-05 13:42:08 -0400] [5216] [INFO] Started server process [5216]
+[2023-06-05 13:42:08 -0400] [5216] [INFO] Waiting for application startup.
+[2023-06-05 13:42:08 -0400] [5216] [INFO] Application startup complete.
+[2023-06-05 13:42:27 -0400] [5214] [INFO] Worker reloading: /home/darkiox/api-emergentes/main.py modified
+[2023-06-05 13:42:27 -0400] [5216] [INFO] Worker reloading: /home/darkiox/api-emergentes/main.py modified
+[2023-06-05 13:42:28 -0400] [5213] [INFO] Worker reloading: /home/darkiox/api-emergentes/main.py modified
