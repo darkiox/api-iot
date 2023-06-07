@@ -58,7 +58,7 @@ app = FastAPI()
 @app.get("/api/v1/location")
 async def get_locations(request: Request, location_id: int = Query(None)):
     db = sqlite3.connect("database.db")
-    api_key = request.headers.get('company-api-key')
+    api_key = request.headers.get('company_api_key')
     # Verificamos la clave API de la compañía
     cursor = db.execute(
         "SELECT * FROM Company WHERE company_api_key=?", (api_key,))
@@ -94,7 +94,7 @@ async def create_location(location: LocationCreate, request: Request):
     db = sqlite3.connect("database.db")
     
     # Verificamos la clave API de la compañía
-    api_key = request.headers.get('company-api-key')
+    api_key = request.headers.get('company_api_key')
 
     cursor = db.execute("SELECT * FROM Company WHERE company_api_key=?", (api_key,))
     company = cursor.fetchone()
@@ -130,7 +130,7 @@ async def delete_location(location_id: int, request: Request):
     db = sqlite3.connect("database.db")
     
     # Verificamos la clave API de la compañía
-    api_key = request.headers.get('company-api-key')
+    api_key = request.headers.get('company_api_key')
     cursor = db.execute("SELECT * FROM Company WHERE company_api_key=?", (api_key,))
     company = cursor.fetchone()
     if not company:
@@ -155,7 +155,7 @@ async def delete_location(location_id: int, request: Request):
 async def update_location(location_id: int, request: Request, update_data: dict,):
     db = sqlite3.connect("database.db")
     # Verificamos la clave API de la compañía
-    api_key = request.headers.get('company-api-key')
+    api_key = request.headers.get('company_api_key')
     cursor = db.execute("SELECT * FROM Company WHERE company_api_key=?", (api_key,))
     company = cursor.fetchone()
     if not company:
@@ -185,7 +185,7 @@ async def update_location(location_id: int, request: Request, update_data: dict,
 @app.get("/api/v1/sensor")
 def get_sensors(request: Request, sensor_id: int = Query(None)):
     db = sqlite3.connect("database.db")
-    api_key = request.headers.get('company-api-key')
+    api_key = request.headers.get('company_api_key')
     cursor = db.execute(
         "SELECT * FROM Company WHERE company_api_key=?", (api_key,))
     company = cursor.fetchone()
@@ -219,7 +219,7 @@ def get_sensors(request: Request, sensor_id: int = Query(None)):
 async def create_sensor(sensor: SensorCreate, request: Request):
     db = sqlite3.connect("database.db")
     # Verificamos la clave API de location
-    api_key = request.headers.get('location-api-key')
+    api_key = request.headers.get('location_api_key')
     cursor = db.execute(
         "SELECT * FROM Location WHERE location_api_key=?", (api_key,))
     location = cursor.fetchone()
@@ -251,7 +251,7 @@ async def create_sensor(sensor: SensorCreate, request: Request):
 async def update_sensor(sensor_id: int, request: Request, update_data: dict):
     db = sqlite3.connect("database.db")
     # Verificamos la clave API de location
-    api_key = request.headers.get('company-api-key')
+    api_key = request.headers.get('company_api_key')
     cursor = db.execute("SELECT * FROM Company WHERE company_api_key=?", (api_key,))
     company = cursor.fetchone()
     if not company:
@@ -313,7 +313,7 @@ async def get_sensor_data(request: Request, start: int, to: int):
         raise HTTPException(status_code=400, detail="Missing Sensor IDs in Body (favor usar formato JSON)")
 
     # Verificamos la clave API del sensor
-    api_key = request.headers.get('company-api-key')
+    api_key = request.headers.get('company_api_key')
     cursor = db.execute(
         "SELECT * FROM Company WHERE company_api_key=?", (api_key,))
     company = cursor.fetchone()
@@ -346,7 +346,7 @@ async def delete_sensor(sensor_id: int, request: Request):
     db = sqlite3.connect("database.db")
     
     # Verificamos la clave API de la compañía
-    api_key = request.headers.get('company-api-key')
+    api_key = request.headers.get('company_api_key')
     cursor = db.execute("SELECT * FROM Company WHERE company_api_key=?", (api_key,))
     company = cursor.fetchone()
     if not company:
